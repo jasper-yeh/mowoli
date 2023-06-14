@@ -5,9 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Modality</th>
-      <th>Aetitle</th>
+      <th><%= Station.human_attribute_name(:name) %></th>
+      <th><%= Station.human_attribute_name(:modality) %></th>
+      <th><%= Station.human_attribute_name(:aetitle) %></th>
       <th><%= Station.human_attribute_name(:receives_orders_via_hl7) %></th>
       <th><%= Station.human_attribute_name(:character_set) %></th>
       <th colspan="3"></th>

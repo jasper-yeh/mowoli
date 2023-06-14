@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= @station.class.human_attribute_name(:name) %></strong>
   <%= @station.name %>
 </p>
 
@@ -13,7 +13,7 @@
 </p>
 
 <p>
-  <strong>Aetitle:</strong>
+  <strong><%= @station.class.human_attribute_name(:aetitle) %></strong>
   <%= @station.aetitle %>
 </p>
 

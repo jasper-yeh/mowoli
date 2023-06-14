@@ -5,16 +5,16 @@
 <table>
   <thead>
     <tr>
-      <th>Accession number</th>
-      <th>Referring physicians name</th>
-      <th>Patients name</th>
-      <th>Patient</th>
-      <th>Patients birth date</th>
-      <th>Patients sex</th>
-      <th>Study instance uid</th>
-      <th>Requested procedure description</th>
-      <th>Modality</th>
-      <th>Scheduled station ae title</th>
+      <th><%= Order.human_attribute_name(:accession_number) %></th>
+      <th><%= Order.human_attribute_name(:referring_physicians_name) %></th>
+      <th><%= Order.human_attribute_name(:patients_name) %></th>
+      <th><%= Order.human_attribute_name(:patient_id) %></th>
+      <th><%= Order.human_attribute_name(:patients_birth_date) %></th>
+      <th><%= Order.human_attribute_name(:patients_sex) %></th>
+      <th><%= Order.human_attribute_name(:study_instance_uid) %></th>
+      <th><%= Order.human_attribute_name(:requested_procedure_description) %></th>
+      <th><%= Order.human_attribute_name(:modality) %></th>
+      <th><%= Order.human_attribute_name(:scheduled_station_ae_title) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -42,4 +42,4 @@
 
 <br>
 
-<%# link_to 'New Order', new_order_path %>
+<%= link_to 'New Order', new_order_path %>

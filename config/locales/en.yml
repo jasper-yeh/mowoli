@@ -20,4 +20,36 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      modality: 'Modality'
+      order: 'Order'
+      station: 'Station'
+    attributes:
+      modality:
+        name: 'Name'
+        description: 'Description'
+      order:
+        accession_number: 'Accesion#'
+        patient_id: 'Patient ID'
+        patients_birth_date: 'Patient DOB'
+        patients_name: 'Patient Name'
+        patients_sex: 'Patient Sex'
+        referring_physicians_name: 'Referring Physician'
+        requested_procedure_description: 'Requested Procedure Decription'
+        study_instance_uid: 'Study Instance UID'
+        modality: 'Modality'
+        station_id: 'Station'
+        scheduled_station_ae_title: 'Scheduled Station AE Title'
+      station:
+        name: 'Name'
+        aetitle: 'AE Title'
+        receives_orders_via_hl7: 'Receive Orders via HL7?'
+        character_set: 'Character Set'
+        modality: 'Modality'
+  orders:
+    new:
+      title: 'New Order'
+  stations:
+    new:
+      title: 'New Station'
