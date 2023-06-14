@@ -1,4 +1,5 @@
-FROM ruby:2.0.0-p648
+FROM ruby:2.3.8
+COPY sources.list /etc/apt/
 RUN apt-get update \
   && apt-get -y --no-install-recommends install nodejs \
   && rm -rf /var/lib/apt/lists/*
