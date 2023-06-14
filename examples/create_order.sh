@@ -1,5 +1,5 @@
 #!/bin/sh
-curl --request POST 'http://localhost:5000/api/v1/orders' \
+curl --request POST 'http://localhost:8080/api/v1/orders' \
   --include \
   --silent \
   --header  'Accept: application/json' \

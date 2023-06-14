@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile.production
     image: bjoernalbers/mowoli:production
     ports:
-      - "80:3000"
+      - "8080:3000"
     volumes:
       - db:/opt/mowoli/var/db
       - mwl:/opt/mowoli/var/mwl

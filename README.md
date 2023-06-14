@@ -26,7 +26,7 @@ $ docker compose up
 
 This will start two Docker containers serving...
 
-- HTTP (port `80/tcp`)
+- HTTP (port `8080/tcp`)
 - DICOM (port `11112/tcp`)
 
 Next create some modalities (stations) with your browser:
