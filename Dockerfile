@@ -20,5 +20,7 @@ ENV SCHEDULED_PERFORMING_PHYSICIANS_NAME="Simpson^Bart"
 # This sets DICOM-Tag (0010,0021).
 ENV ISSUER_OF_PATIENT_ID="MOWOLI"
 ENV RAILS_ENV=development
+RUN mkdir -p /etc/my_init.d
+ADD docker/deploy_tasks.sh /etc/my_init.d/deploy_tasks.sh
 EXPOSE 3000
 CMD ["bundle","exec","puma","--config","config/puma.rb"]
