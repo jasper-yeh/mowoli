@@ -215,7 +215,7 @@ module HL7
         #assistant_result_interpreter
         technician: order.scheduled_performing_physicians_name,
         #transcriptionist
-        #scheduled_datetime
+        scheduled_datetime order.scheduled_date.to_datetime,
         #number_of_sample_containers
         #transport_logistics_of_collected_sample
         #collectors_comment

@@ -33,6 +33,10 @@ class Order < ActiveRecord::Base
   validates :patients_birth_date,
     presence: true
 
+  # DICOM Value Representation: DA (Date)
+  validates :scheduled_date,
+    presence: true
+  
   # DICOM Value Representation: UI (Unique Identifier, UID)
   validates :study_instance_uid,
     uniqueness: true,
