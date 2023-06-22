@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160715092930) do
+ActiveRecord::Schema.define(version: 20230622144140) do
 
   create_table "modalities", force: :cascade do |t|
     t.string   "name",        null: false
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20160715092930) do
     t.string   "study_instance_uid",              null: false
     t.date     "patients_birth_date",             null: false
     t.integer  "station_id",                      null: false
+    t.date     "scheduled_date"
   end
 
   add_index "orders", ["station_id"], name: "index_orders_on_station_id"
