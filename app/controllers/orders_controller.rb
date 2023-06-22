@@ -32,6 +32,7 @@ class OrdersController < ApplicationController
              :patients_sex,
              :requested_procedure_description,
              :station_id,
+             :scheduled_date,
              patients_name_attributes:              PersonName.attributes,
              referring_physicians_name_attributes:  PersonName.attributes)
   end

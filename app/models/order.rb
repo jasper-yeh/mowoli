@@ -11,6 +11,8 @@ class Order < ActiveRecord::Base
 
   after_initialize :set_default_scheduled_performing_physicians_name
 
+  validate :scheduled_date_is_valid_datetime
+
   validates :station,
     presence: true
 
@@ -33,6 +35,9 @@ class Order < ActiveRecord::Base
   validates :patients_birth_date,
     presence: true
 
+  validates :scheduled_date,
+    presence: true
+  
   # DICOM Value Representation: UI (Unique Identifier, UID)
   validates :study_instance_uid,
     uniqueness: true,
@@ -71,6 +76,10 @@ class Order < ActiveRecord::Base
   end
 
   private
+
+  def scheduled_date_is_valid_datetime
+    errors.add(:scheduled_date, 'must be a valid datetime') if ((DateTime.parse(scheduled_date) rescue ArgumentError) == ArgumentError)
+  end
 
   def set_study_instance_uid
     self.study_instance_uid =

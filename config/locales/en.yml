@@ -37,6 +37,7 @@ en:
         patients_sex: 'Patient Sex'
         referring_physicians_name: 'Referring Physician'
         requested_procedure_description: 'Requested Procedure Decription'
+        scheduled_date_description: 'YYYY-MM-DD HH:MM:SS'
         study_instance_uid: 'Study Instance UID'
         modality: 'Modality'
         station_id: 'Station'

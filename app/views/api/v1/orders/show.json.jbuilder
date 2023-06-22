@@ -7,6 +7,7 @@ json.extract! @order,
   :patient_id,
   :patients_name,
   :patients_birth_date,
+  :scheduled_date,
   :patients_sex
 
 json.station do |json|
